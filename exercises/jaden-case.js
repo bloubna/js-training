@@ -10,10 +10,16 @@
  *
  */
 
-
+function capitilize(chaine){
+    return chaine.substring(0,1).toUpperCase() + chaine.substring(1,chaine.length).toLowerCase();
+}
 
 //* Begin of tests
 const assert = require('assert')
 
-assert.fail('You must write your own tests')
 // End of tests */
+assert.strictEqual(typeof capitilize, 'function')
+assert.strictEqual(capitilize.length, 1)
+assert.strictEqual(capitilize("loubna"),"Loubna")
+
+//date.substring(0, 2);
